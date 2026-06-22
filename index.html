@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rise Up for Quacky</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5fbff;
+      --surface: #ffffff;
+      --text: #14324a;
+      --accent: #0d6d77;
+      --accent-dark: #08474d;
+      --warning: #b53d20;
+      --border: #c7dde8;
+      --shadow: 0 18px 40px rgba(20, 50, 74, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top, rgba(87, 187, 255, 0.18), transparent 35%),
+        linear-gradient(180deg, #eff8ff 0%, var(--bg) 100%);
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    .hero,
+    .panel,
+    .cta {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(13, 109, 119, 0.1);
+      color: var(--accent-dark);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+
+    h1,
+    h2 {
+      line-height: 1.15;
+      margin: 0 0 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 48rem;
+    }
+
+    .hero strong {
+      color: var(--warning);
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      margin-bottom: 1.5rem;
+    }
+
+    .panel {
+      padding: 1.75rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+
+    li + li {
+      margin-top: 0.8rem;
+    }
+
+    blockquote {
+      margin: 1.2rem 0 0;
+      padding: 1rem 1.25rem;
+      border-left: 4px solid var(--accent);
+      background: rgba(13, 109, 119, 0.06);
+      border-radius: 0 16px 16px 0;
+      font-weight: 700;
+    }
+
+    .cta {
+      padding: 2.2rem;
+      text-align: center;
+    }
+
+    .cta p {
+      max-width: 44rem;
+      margin: 0 auto 1.25rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.9rem;
+      margin: 1.5rem 0;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.95rem 1.4rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      opacity: 0.95;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .button.secondary {
+      border: 2px solid var(--accent);
+      color: var(--accent-dark);
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      color: #45657c;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      .hero,
+      .panel,
+      .cta {
+        border-radius: 18px;
+      }
+
+      .hero {
+        padding: 2rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <span class="eyebrow">Rise Up for Quacky</span>
+      <h1>A duckling died in the Lincoln Memorial Reflecting Pool. We should not look away.</h1>
+      <p>
+        Recent reporting describes a dead duckling floating in the Lincoln Memorial Reflecting Pool after a
+        <strong>$14.7 million renovation</strong> ran into algae blooms, peeling sealant, and frantic cleanup efforts.
+        The cause of the duckling’s death remains unclear, but the warning is unmistakable: public landmarks should be safe for wildlife, not hazardous to it.
+      </p>
+      <blockquote>Rise Up for Quacky — because “cause unclear” is not good enough when a vulnerable animal is already dead.</blockquote>
+    </section>
+
+    <div class="grid">
+      <section class="panel">
+        <h2>What happened</h2>
+        <ul>
+          <li>A duckling was found dead in the Reflecting Pool on Sunday.</li>
+          <li>The pool has been plagued by algae, peeling sealant, and emergency treatment efforts.</li>
+          <li>Officials have warned of prosecutions for alleged vandalism while basic questions about wildlife safety remain unanswered.</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Why it matters</h2>
+        <ul>
+          <li>The Reflecting Pool is a national symbol and a shared habitat for birds and other living creatures.</li>
+          <li>High-intensity cleanup chemicals and rushed repairs can have real consequences for animals in the water.</li>
+          <li>Protecting public spaces means demanding stewardship that values life, transparency, and accountability.</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="cta">
+      <h2>Take action for Quacky</h2>
+      <p>
+        Speak up for wildlife-safe maintenance at the Lincoln Memorial Reflecting Pool. Ask for a transparent public accounting of what happened, independent wildlife review of current cleanup methods, and safeguards that protect ducks and other birds before more harm is done.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="mailto:info@nps.gov?subject=Protect%20wildlife%20at%20the%20Lincoln%20Memorial%20Reflecting%20Pool&body=I%20am%20asking%20for%20a%20transparent%20public%20accounting%20of%20the%20duckling%E2%80%99s%20death%20and%20wildlife-safe%20protections%20at%20the%20Reflecting%20Pool.">Email the National Park Service</a>
+        <a class="button secondary" href="https://www.usa.gov/elected-officials" target="_blank" rel="noreferrer">Contact your representatives</a>
+      </div>
+      <p><strong>Rise Up for Quacky.</strong> Share the story, demand answers, and insist that public monuments protect the wildlife drawn to them.</p>
+    </section>
+
+    <footer>
+      Built as a static GitHub Pages site to spotlight the duckling found in the Lincoln Memorial Reflecting Pool and call for wildlife-safe stewardship.
+    </footer>
+  </main>
+</body>
+</html>
